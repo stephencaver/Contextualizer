@@ -1,0 +1,86 @@
+.contextualizer {
+	position: fixed;
+	text-align: center;
+	width: 100%;
+	bottom: 0;
+	background: rgba(0,0,0,.3);
+	color: #fff;
+	z-index: 50000;
+	display: none;
+	display: block; /* to hide contextualizer, comment out this line */
+}
+
+.contextualizer p {
+	margin: .5em 0;
+}
+.contextualizer p:after {
+	content: " — Baseline";
+}
+
+@media only screen and (min-width: 25.5em) {
+
+	.contextualizer p:after {
+		content: " — 25.5em";
+	}
+
+}
+
+@media only screen and (min-width: 32em) {
+
+	.contextualizer p:after {
+		content: " — 32em";
+	}
+
+}
+
+@media only screen and (min-width: 43.5em) {
+
+	.contextualizer p:after {
+		content: " — 43.5em";
+	}
+
+}
+
+@media only screen and (min-width: 52.5em) {
+
+	.contextualizer p:after {
+		content: " — 52.5em";
+	}
+
+}
+
+@media only screen and (min-width: 61.5em) {
+
+	.contextualizer p:after {
+		content: " — 61.5em";
+	}
+
+}
+
+@media only screen and (min-width: 70.5em) {
+
+	.contextualizer p:after {
+		content: " — 70.5em";
+	}
+
+}
+
+@media only screen and (min-width: 79.5em) {
+
+	.contextualizer p:after {
+		content: " — 79.5em";
+	}
+
+}
+
+@media only screen and (min-width: 1400px) {
+
+	.contextualizer p:after {
+		content: " — SUPER BIG";
+	}
+
+	html {
+		font-size: 120%;
+	}
+
+}

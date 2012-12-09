@@ -43,6 +43,20 @@ article {
 
 }
 
+@media only screen and (min-width: 52.5em) {
+
+    body {
+        background: #fff7f5;
+    }
+    h1 {
+        color: #a84b3a;
+    }
+    article {
+        width: 75%;
+    }
+
+}
+
 @media only screen and (min-width: 61.5em) {
 
     body {
@@ -67,23 +81,6 @@ article {
     }
     article {
         width: 60%;
-    }
-
-}
-
-@media only screen and (min-width: 1400px) {
-
-    html {
-        font-size: 120%;
-    }
-    body {
-        background: #ffe87a;
-    }
-    h1 {
-        color: #467f71;
-    }
-    article {
-        width: 50%;
     }
 
 }

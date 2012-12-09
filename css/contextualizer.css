@@ -1,86 +1,87 @@
-.contextualizer {
+body:before {
 	position: fixed;
-	text-align: center;
-	width: 100%;
+	right: 20px;
 	bottom: 0;
-	background: rgba(0,0,0,.3);
-	color: #fff;
-	z-index: 50000;
-	display: none;
-	display: block; /* to hide contextualizer, comment out this line */
+	z-index: 1000;
+	display: block;
+	/* display: none; */
+	padding: 5px 8px;
+	border-color: gray;
+	border-top: 3px solid;
+	border-bottom: none;
+	background: white;
+	background: rgba(255,255,255,.75);
+	background: #dbdbdb;
+	background: -moz-linear-gradient(top,  #dbdbdb 0%, #d1d1d1 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#dbdbdb), color-stop(100%,#d1d1d1));
+	background: -webkit-linear-gradient(top,  #dbdbdb 0%,#d1d1d1 100%);
+	background: -o-linear-gradient(top,  #dbdbdb 0%,#d1d1d1 100%);
+	background: -ms-linear-gradient(top,  #dbdbdb 0%,#d1d1d1 100%);
+	background: linear-gradient(to bottom,  #dbdbdb 0%,#d1d1d1 100%);
+	-webkit-box-shadow: 0px 0px 1px 0px #000, inset 0px 0px 1px 0px #fff;
+	box-shadow: 0px 0px 1px 0px #000, inset 0px 0px 1px 0px #fff;
+	color: black;
+	color: rgba(0,0,0,.6);
+	content: "NO MQ";
+	text-align: center;
+	text-shadow: 0 1px rgba(255,255,255,.7);
+	font-weight: bold;
+	font-size: 11px;
+	-moz-border-radius-topleft: 5px;
+	-moz-border-radius-topright: 5px;
+	-webkit-border-top-right-radius: 5px;
+	-webkit-border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	border-top-left-radius: 5px;
 }
 
-.contextualizer p {
-	margin: .5em 0;
-}
-.contextualizer p:after {
-	content: " — Baseline";
+.lt-ie9 body:before {
+	position: static;
+	padding-right: 0;
+	padding-left: 0;
 }
 
 @media only screen and (min-width: 25.5em) {
-
-	.contextualizer p:after {
-		content: " — 25.5em";
+	body:before {
+		border-color: #ff0000;
+		content: "MQ 1 - 25.5em";
 	}
-
 }
-
 @media only screen and (min-width: 32em) {
-
-	.contextualizer p:after {
-		content: " — 32em";
+	body:before {
+		border-color: #ffaa00;
+		content: "MQ 2 - 32em";
 	}
-
 }
-
 @media only screen and (min-width: 43.5em) {
-
-	.contextualizer p:after {
-		content: " — 43.5em";
+	body:before {
+		border-color: #ffff00;
+		content: "MQ 3 - 43.5em";
 	}
-
 }
-
 @media only screen and (min-width: 52.5em) {
-
-	.contextualizer p:after {
-		content: " — 52.5em";
+	body:before {
+		border-color: #00cc00;
+		content: "MQ 4 - 52.5em";
 	}
-
 }
-
 @media only screen and (min-width: 61.5em) {
-
-	.contextualizer p:after {
-		content: " — 61.5em";
+	body:before {
+		border-color: #1240ab;
+		content: "MQ 5 - 61.5em";
 	}
-
 }
 
 @media only screen and (min-width: 70.5em) {
-
-	.contextualizer p:after {
-		content: " — 70.5em";
+	body:before {
+		border-color: #1240ab;
+		content: "MQ 5 - 70.5em";
 	}
-
 }
 
 @media only screen and (min-width: 79.5em) {
-
-	.contextualizer p:after {
-		content: " — 79.5em";
+	body:before {
+		border-color: #1240ab;
+		content: "MQ 5 - 79.5em";
 	}
-
-}
-
-@media only screen and (min-width: 1400px) {
-
-	.contextualizer p:after {
-		content: " — SUPER BIG";
-	}
-
-	html {
-		font-size: 120%;
-	}
-
 }
